@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/File">
+        <file>u=1962756420,4220601634&amp;fm=21&amp;gp=0.jpg</file>
+        <file>close.png</file>
+        <file>New.png</file>
+        <file>open.png</file>
+    </qresource>
+</RCC>

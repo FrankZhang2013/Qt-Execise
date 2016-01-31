@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNew_N"/>
+    <addaction name="actionOpen_O"/>
+    <addaction name="actionClose_C"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_E"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>视图</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_N"/>
+   <addaction name="actionOpen_O"/>
+   <addaction name="actionClose_C"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_N">
+   <property name="icon">
+    <iconset resource="MenuIcon.qrc">
+     <normaloff>:/File/New.png</normaloff>
+     <normalon>:/File/u=1962756420,4220601634&amp;fm=21&amp;gp=0.jpg</normalon>:/File/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;新建&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="actionOpen_O">
+   <property name="icon">
+    <iconset resource="MenuIcon.qrc">
+     <normaloff>:/File/open.png</normaloff>:/File/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;打开&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="actionClose_C">
+   <property name="icon">
+    <iconset resource="MenuIcon.qrc">
+     <normaloff>:/File/close.png</normaloff>:/File/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;关闭&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionExit_E">
+   <property name="text">
+    <string>Exit(&amp;E)</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;退出&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="MenuIcon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionNew_N</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
